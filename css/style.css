@@ -74,8 +74,6 @@ body {
 @media (max-width: 479.98px) {
     
 }
-
-
 .header {
     position: absolute;
     width: 100%;
@@ -189,8 +187,6 @@ body {
         overflow: hidden;
     }
 }
-
-
 .button {
     display: inline-block;
     font-family: Raleway;
@@ -272,7 +268,6 @@ body {
     }
 }
 
-
 /* ===================================== */
 
 .block-text{
@@ -330,7 +325,6 @@ body {
     background-color: #ec5863;
     
 }
-
 .get-started__content{
     flex: 0 1 48%;
     padding: 0px 20px;
@@ -394,7 +388,7 @@ body {
     .get-started__block-text {
         max-width: none;
     }
-    .get-started__content {
+    .get-started__content {ьш
         flex: 1 1 100%;
         padding: 0;
     }
@@ -407,7 +401,7 @@ body {
         padding: 0;
     }
 }
-/*2-35* ---------------------------------------------*/
+/* ---------------------------------------------*/
 .stay-safe{
     padding: 80px 0;
 }
@@ -417,7 +411,6 @@ body {
 }
 .stay-safe__media{
     flex: 0 1 50%;
-    padding: 0px 0px 0px 47px;
 }
 .stay-safe__content{
     flex: 0 1 50%;
@@ -434,6 +427,71 @@ body {
     display: inline-block; /*чтобы объект не занимал всю ширину, а был по ширине картинки*/
     box-shadow: 2px 4px 32px rgba(0, 0, 0, 0.12);
     border-radius: 16px;
+    position: relative;
+    width: 61.5%;
+}
+.media-stay-safe__image img{
+    position: relative;
+    z-index: 2;
 }
 
-/*2h41*/
+.media-stay-safe__image::after{
+    content: "";
+    position: absolute;
+    bottom: 25px;
+    left: 42px;
+    width: 206px;
+    height: 27px;
+    z-index: 2;
+    background: rgba(240, 240, 240, 0.49);
+    border-radius: 16px;
+}
+.media-stay-safe__item{
+    position: absolute;
+    background-color: #ec5863;
+    border-radius: 30px;
+    width: 77px;
+    height: 77px;
+}
+.media-stay-safe__item_1{
+    top: 30px;
+    left: 30px;
+    width: 147px;
+    height: 147px;
+}
+.media-stay-safe__item_2{
+    bottom: 33px;
+    left: 60px;
+}
+.media-stay-safe__item_3{
+    bottom: 142px;
+    right: 16px;
+}
+@media(max-width: 991.98px) {
+    .stay-safe__media{
+        padding: 40px 0px;
+    }
+
+@media(min-width: 991.98px) {
+    .stay-safe__media{
+        padding: 0px 0px 0px 47px;
+    }
+}
+@media(max-width: 767.98px) { 
+    .stay-safe__media{
+        padding: 30px 0px;
+    }
+
+    .stay-safe__container{
+        flex-direction: column-reverse;
+    } 
+    .stay-safe__content {
+        margin: 0px 0px 30px 0px;
+    }
+
+}
+@media(max-width: 479.98px) {
+    .media-stay-safe {
+        width: 290px;
+    }
+}
